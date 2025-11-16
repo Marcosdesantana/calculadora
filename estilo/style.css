@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#res{
+    background-color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#calculadora{
+    background-color: aqua;
+    width: 400px;
+    height: 600px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 1.5em;
+    width: 400px;
+    height: 500px;
+}
+
+td , th{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+td:hover , th:hover{
+    cursor: pointer;
+    background-color: rgb(2, 164, 164);
+}

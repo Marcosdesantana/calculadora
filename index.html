@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        <div id="calculadora">
+            <div id="res">
+            </div>
+            <table>
+                <tr>
+                    <th onclick="zerar_valor()">C</th>
+                    <th onclick="remover_valor()">&gt;</th>
+                    <th onclick="adicionar_valor('%')">%</th>
+                    <th onclick="adicionar_valor('x')">X</th>
+                </tr>
+
+                <tr>
+                    <td onclick="adicionar_valor(7)">7</td>
+                    <td onclick="adicionar_valor(8)">8</td>
+                    <td onclick="adicionar_valor(9)">9</td>
+                    <td onclick="adicionar_valor('-')">-</td>
+                </tr>
+
+                <tr>
+                    <td onclick="adicionar_valor(4)">4</td>
+                    <td onclick="adicionar_valor(5)">5</td>
+                    <td onclick="adicionar_valor(6)">6</td>
+                    <td onclick="adicionar_valor('+')">+</td>
+                </tr>
+
+                <tr>
+                    <td onclick="adicionar_valor(1)">1</td>
+                    <td onclick="adicionar_valor(2)">2</td>
+                    <td onclick="adicionar_valor(3)">3</td>
+                    <td onclick="calcular_valor()" rowspan="2">=</td>
+                </tr>
+
+                <tr>
+                    <td onclick="adicionar_valor(0)" colspan="2">0</td>
+                    <td onclick="adicionar_valor('.')">.</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>

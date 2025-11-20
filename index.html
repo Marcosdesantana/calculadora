@@ -14,7 +14,7 @@
             <table>
                 <tr>
                     <th onclick="zerar_valor()">C</th>
-                    <th onclick="remover_valor()">&gt;</th>
+                    <th >&gt;</th>
                     <th onclick="adicionar_valor('%')">%</th>
                     <th onclick="adicionar_valor('x')">X</th>
                 </tr>
@@ -37,12 +37,12 @@
                     <td onclick="adicionar_valor(1)">1</td>
                     <td onclick="adicionar_valor(2)">2</td>
                     <td onclick="adicionar_valor(3)">3</td>
-                    <td onclick="calcular_valor()" rowspan="2">=</td>
+                    <td onclick="calcular_valor() , adicionar_valor('=')"  rowspan="2">=</td>
                 </tr>
 
                 <tr>
                     <td onclick="adicionar_valor(0)" colspan="2">0</td>
-                    <td onclick="adicionar_valor('.')">.</td>
+                    <td>.</td>
                 </tr>
             </table>
         </div>

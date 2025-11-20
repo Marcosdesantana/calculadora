@@ -2,24 +2,42 @@ let res = document.getElementById('res')
 let valores = []
 let soma = 0
 let tipo = ''
+let aqui = ''
+let este = ''
 function adicionar_valor(numero){
-    
-    res.innerText += numero
+    if(numero != '='){
+      res.innerText += numero
+    }
 
-    if(typeof numero == 'number'){
-       valores.push(numero)
+    if(typeof numero == 'number'){ 
+
+      aqui += String(numero)
+      este = Number(aqui)
     }else{
+      if(este != ''){
+      valores.push(este)
+      }
+      este = ''
+      aqui = ''
       tipo = ''
       tipo = numero
-    }
+
+   }
+    
+      
 }
 
 function zerar_valor(){
    res.innerText = ''
+   valores = ''
    valores = []
+   
 }
 
 function calcular_valor(){
+   valores.push(este)
+      este = ''
+   console.log(valores)
     let soma = 0
 
    if(tipo == '+'){
@@ -67,6 +85,8 @@ function calcular_valor(){
       valores[0] = soma
 
    }
+
+
 
 }
 

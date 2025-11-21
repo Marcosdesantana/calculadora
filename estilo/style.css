@@ -48,3 +48,31 @@ td:hover , th:hover{
     cursor: pointer;
     background-color: rgb(2, 164, 164);
 }
+
+@media screen and (max-width:670px){
+
+    main{
+        height: 100dvh;
+        width: 100vw;
+    }
+
+    #calculadora{
+        width: 100%;
+        height: 100%;
+    }
+
+    #res{
+        width: 100%;
+        height: 25%;
+    }
+
+    table{
+        height: 75%;
+        width: 100%;
+    }
+
+    td , th{
+        padding: 5 px;
+    }
+    
+}
